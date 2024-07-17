@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Marks
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the 5 subject marks as inputs:");
+	int a=sc.nextInt();
+	int b=sc.nextInt();
+	int c=sc.nextInt();
+	int d=sc.nextInt();
+	int e=sc.nextInt();
+	int f=(a+b+c+d+e);
+	int g=f/5;
+	
+	if(g>90){
+	    System.out.println("O Grade");
+	}
+    else{
+         System.out.println("Reappear");
+    }
+    System.out.println("the total marks of 5 subjects is:"+" "+f);
+  }
+}
